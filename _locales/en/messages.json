@@ -60,13 +60,13 @@
   "message": "This key isn’t recognised."
  },
  "connSentGlance": {
-  "message": "Pages you view are saved to $1 so you can find them later: address, title, when and how long you viewed them, plus the text (including chat conversations) once you have read for $2 s or a video has played for 1 min."
+  "message": "Pages you view are saved to $1 so you can find them later: address, title, when and how long you viewed them, plus the text (including chat conversations) once you have read for $2 s."
  },
  "connSentRead": {
-  "message": "Pages you read for $2 s (or where a video plays for 1 min) are saved to $1 so you can find them later: address, title, text (including chat conversations), and when and how long you viewed them."
+  "message": "Pages you read for $2 s are saved to $1 so you can find them later: address, title, text (including chat conversations), and when and how long you viewed them."
  },
  "connSentNone": {
-  "message": "Pages you view are saved to the platform you connect so you can find them later: address, title, when and how long you viewed them, plus the text (including chat conversations) once you have read for $1 s or a video has played for 1 min."
+  "message": "Pages you view are saved to the platform you connect so you can find them later: address, title, when and how long you viewed them, plus the text (including chat conversations) once you have read for $1 s."
  },
  "connSentGlancePlay": {
   "message": "Pages you view are saved to $1 so you can find them later: address, title, when and how long you viewed them, plus the text (including chat conversations) once you have read for $2 s or a video has played for 1 min; for videos also playback, subtitles and the video file address."

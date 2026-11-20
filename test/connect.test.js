@@ -65,10 +65,10 @@ test('replace after a sites/kinds change keeps that change; a code without a nam
 
 test('disclosure: one sentence by kinds and the real threshold; Neurosea\'s also names playback and subtitles', () => {
   const d = (id, name, kinds, thr = 12) => disclosure({ thresholdSec: thr, id, name, kinds });
-  assert.equal(d(null), '你看过的网页会存到你连接的平台，方便以后找回：网址、标题、访问时间和停留时长；看满 12 秒（或视频播满 1 分钟）的还有正文，含聊天对话。');
-  assert.equal(d('hindsight', 'Hindsight', ['read', 'glance'], 7), '你看过的网页会存到 Hindsight，方便以后找回：网址、标题、访问时间和停留时长；看满 7 秒（或视频播满 1 分钟）的还有正文，含聊天对话。');
-  assert.equal(d('mem0', 'Mem0', ['read']), '你看满 12 秒（或视频播满 1 分钟）的网页会存到 Mem0，方便以后找回：网址、标题、正文（含聊天对话）、访问时间和停留时长。');
-  assert.equal(d('supermemory', 'Supermemory', ['read', 'glance']), '你看过的网页会存到 Supermemory，方便以后找回：网址、标题、访问时间和停留时长；看满 12 秒（或视频播满 1 分钟）的还有正文，含聊天对话。');
+  assert.equal(d(null), '你看过的网页会存到你连接的平台，方便以后找回：网址、标题、访问时间和停留时长；看满 12 秒的还有正文，含聊天对话。');
+  assert.equal(d('hindsight', 'Hindsight', ['read', 'glance'], 7), '你看过的网页会存到 Hindsight，方便以后找回：网址、标题、访问时间和停留时长；看满 7 秒的还有正文，含聊天对话。');
+  assert.equal(d('mem0', 'Mem0', ['read']), '你看满 12 秒的网页会存到 Mem0，方便以后找回：网址、标题、正文（含聊天对话）、访问时间和停留时长。');
+  assert.equal(d('supermemory', 'Supermemory', ['read', 'glance']), '你看过的网页会存到 Supermemory，方便以后找回：网址、标题、访问时间和停留时长；看满 12 秒的还有正文，含聊天对话。');
   assert.equal(d('webhook', '家里', ['read', 'glance']), '你看过的网页会存到 家里，方便以后找回：网址、标题、访问时间和停留时长；看满 12 秒（或视频播满 1 分钟）的还有正文，含聊天对话；视频还有播放记录、字幕和视频文件地址。');
   assert.equal(d('webhook', 'Neurosea', ['read']), '你看满 12 秒（或视频播满 1 分钟）的网页会存到 Neurosea，方便以后找回：网址、标题、正文（含聊天对话）、访问时间和停留时长；视频还有播放记录、字幕和视频文件地址。');
 });
@@ -296,11 +296,11 @@ test('box: a rejected key on a self-hostable platform keeps 自己部署的？�
 test('box: the disclosure is always there, with the agree button pointing at it', () => {
   const b = open({ thresholdSec: 9 });
   let s = b.q();
-  assert.equal(s.line, '你看过的网页会存到你连接的平台，方便以后找回：网址、标题、访问时间和停留时长；看满 9 秒（或视频播满 1 分钟）的还有正文，含聊天对话。');
+  assert.equal(s.line, '你看过的网页会存到你连接的平台，方便以后找回：网址、标题、访问时间和停留时长；看满 9 秒的还有正文，含聊天对话。');
   assert.equal(s.btn.attrs['aria-describedby'], s.all.find(e => e.className === 'c-line').id);
-  assert.equal(b.chip('Mem0').line, '你看过的网页会存到 Mem0，方便以后找回：网址、标题、访问时间和停留时长；看满 9 秒（或视频播满 1 分钟）的还有正文，含聊天对话。');
+  assert.equal(b.chip('Mem0').line, '你看过的网页会存到 Mem0，方便以后找回：网址、标题、访问时间和停留时长；看满 9 秒的还有正文，含聊天对话。');
   assert.equal(b.type(NSK).line, '你看过的网页会存到 Neurosea，方便以后找回：网址、标题、访问时间和停留时长；看满 9 秒（或视频播满 1 分钟）的还有正文，含聊天对话；视频还有播放记录、字幕和视频文件地址。');
-  assert.equal(b.chip('Hindsight').line, '你看过的网页会存到 Hindsight，方便以后找回：网址、标题、访问时间和停留时长；看满 9 秒（或视频播满 1 分钟）的还有正文，含聊天对话。');
+  assert.equal(b.chip('Hindsight').line, '你看过的网页会存到 Hindsight，方便以后找回：网址、标题、访问时间和停留时长；看满 9 秒的还有正文，含聊天对话。');
   delete globalThis.document;
 });
 
