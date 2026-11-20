@@ -1,0 +1,9 @@
+{
+  "name": "afferent",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test"
+  }
+}

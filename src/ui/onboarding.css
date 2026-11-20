@@ -1,0 +1,39 @@
+/* First-run page (Start8). Light only. */
+:root { color-scheme: light; }
+[hidden] { display: none !important; }
+body.onb { margin: 0; padding: 0; max-width: none; min-height: 100vh; box-sizing: border-box; display: flex; flex-wrap: wrap;
+  background: var(--bg); color: var(--ink);
+  font: 15px/1.6 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', system-ui, sans-serif; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+.hero { position: relative; flex: 1 1 420px; container-type: inline-size; display: flex; flex-direction: column; box-sizing: border-box; overflow: hidden;
+  border-radius: 0 44px 44px 0; background: var(--base); }
+.rise { position: absolute; inset: 0; background: var(--fill); animation: rise .9s .15s cubic-bezier(.2, .8, .2, 1) both; }
+@keyframes rise { from { transform: translateY(100%); } to { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .rise { animation: none; } }
+.hero-in { position: relative; flex: 1 1 auto; box-sizing: border-box; display: flex; flex-direction: column;
+  justify-content: space-between; gap: 48px; padding: 36px 44px 52px; }
+/* margin: the glyph's left dot starts 7/56 in, so it lines up with the wordmark. */
+.mark { width: 56px; height: 56px; margin-left: -7px; border-radius: 10px; background: var(--mark-bg) var(--mark-glyph) center / 100% no-repeat; }
+/* The wordmark is ~4.2x its size wide: shrink it with the panel (less 2 x 44px padding) so it never clips. */
+.name { font: 800 min(100px, (100cqw - 88px) / 4.4)/0.92 'Rubik', 'Segoe UI', system-ui, sans-serif; letter-spacing: -0.035em; }
+.tagline { margin: 20px 0 0; font-size: 22px; line-height: 1.45; font-weight: 700; }
+
+/* Stacked: top offset 170px at 800px tall, less on shorter windows so the button stays in view. */
+main { flex: 1 1 520px; display: flex; align-items: flex-start; box-sizing: border-box;
+  padding: clamp(48px, 100vh - 630px, 170px) clamp(24px, 6vw, 88px) 48px; }
+/* Side by side: top 215px above the window middle, from the window height only so content growth never moves it; 960 not 940 because media queries count the scrollbar. */
+@media (min-width: 960px) { main { padding-top: max(48px, 50vh - 215px); } }
+#setup { width: 100%; max-width: 536px; }
+.onb .connect { max-width: 536px; }
+/* Room around the disclosure -> buttons (Windows CJK fonts run wider). */
+.onb .c-go { gap: 26px; }
+.onb .c-actions { gap: 12px 30px; }
+.onb .c-actions .c-btn { margin-right: 12px; }
+.quiet { min-height: 44px; margin: 0; padding: 0; border: 0; background: transparent; color: var(--muted); font: inherit; cursor: pointer; }
+
+.done { width: 100%; max-width: 500px; display: flex; flex-direction: column; gap: 26px; }
+.done h1 { margin: 0; font-size: 34px; line-height: 1.3; font-weight: 800; }
+.pin { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 16px; }
+.ico { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 999px; background: var(--soft); }
+.done .c-btn { padding: 0 40px; }

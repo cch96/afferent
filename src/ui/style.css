@@ -1,0 +1,59 @@
+/* Palette of the approved design (8th draft). Only the popup has a dark set. */
+:root {
+  --bg: #FFFCF9;
+  --ink: #45362D;
+  --muted: #7B6659;
+  --soft: #F7EEE7;
+  --base: #F6E6DA;
+  --grey: #EDE7E2;
+  --fill: #EFA47E;
+  --card-fill: #F0B593;
+  --dot: #C77A52;
+  --ok: #3B7B56;
+  --red: #AA4539;
+  --red-bg: #F8EAE6;
+  --red-text: #88382F;
+  --red-btn: #AA4539;
+  --red-btn-fg: #FFFCF9;
+  --pill: #F7EEE7;
+  --pill-fg: #45362D;
+  --paused-bg: #45362D;
+  --paused-fg: #FFFCF9;
+  --mark-bg: #EFA47E;
+  --rule: #EADBCF;
+  --focus: #45362D;
+  --notice-bg: #F6E6DA;
+  --mark-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cpath d='M32 34L70 58L52 70L96 94' fill='none' stroke='%2345362D' stroke-width='12' stroke-miterlimit='8' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='34' r='16' fill='%2345362D'/%3E%3Ccircle cx='96' cy='94' r='16' fill='%2345362D'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme: dark) {
+  body.popup {
+    --bg: #231B16;
+    --ink: #EDE3DA;
+    --muted: #B8A494;
+    --soft: #30271F;
+    --base: #3B2F27;
+    --grey: #332B25;
+    --fill: #DE9B76;
+    --card-fill: #6A4836;
+    --dot: #DE9B76;
+    --ok: #8EC6A3;
+    --red: #E39A90;
+    --red-bg: #3B2622;
+    --red-text: #EBB2A8;
+    --red-btn: #EBB2A8;
+    --red-btn-fg: #3B2622;
+    --pill: #3B2F27;
+    --pill-fg: #EDE3DA;
+    --paused-bg: #DE9B76;
+    --paused-fg: #45362D;
+    --rule: #3B2F27;
+    --focus: #EDE3DA;
+    --notice-bg: #3B2F27;
+  }
+}
+
+/* Rubik, bundled: only the "Afferent" wordmark uses it. Variable font, so one file covers 700 and 800. */
+@font-face { font-family: 'Rubik'; font-style: normal; font-weight: 700 800; font-display: swap; src: url('../../fonts/rubik-latin.woff2') format('woff2'); }
+/* <span class="wordmark">Afferent</span>: the peach rounded mark (same as the toolbar icon), then the name. */
+.wordmark { display: inline-flex; align-items: center; gap: 8px; font: 800 17px/1.5 'Rubik', 'Segoe UI', system-ui, sans-serif; letter-spacing: -0.02em; color: var(--ink); }
+.wordmark::before { content: ''; flex: none; width: 24px; height: 24px; border-radius: 7px; background: var(--mark-bg) var(--mark-glyph) center / 100% no-repeat; }

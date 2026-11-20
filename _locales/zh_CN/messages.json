@@ -1,0 +1,419 @@
+{
+ "extName": {
+  "message": "Afferent"
+ },
+ "extDesc": {
+  "message": "认真读过的网页，替你记到你选的记忆平台。"
+ },
+ "fieldNamespace": {
+  "message": "命名空间"
+ },
+ "fieldUserId": {
+  "message": "用户 ID"
+ },
+ "connLabel": {
+  "message": "API 密钥"
+ },
+ "connPickGroup": {
+  "message": "选平台"
+ },
+ "connStart": {
+  "message": "同意并开始"
+ },
+ "connConnect": {
+  "message": "同意并连接"
+ },
+ "connBusy": {
+  "message": "正在连接…"
+ },
+ "connTitle": {
+  "message": "连接记忆平台"
+ },
+ "connPh": {
+  "message": "贴上 API 密钥"
+ },
+ "connPhFor": {
+  "message": "贴上 $1 的 API 密钥"
+ },
+ "connHintPick": {
+  "message": "没有密钥？先点上面的平台。"
+ },
+ "connHintNoKey": {
+  "message": "没有密钥？"
+ },
+ "connGetKey": {
+  "message": "去 $1 拿 ↗"
+ },
+ "connSelfHosted": {
+  "message": "自己部署的？"
+ },
+ "connChangeAddr": {
+  "message": "改地址"
+ },
+ "connAddrPh": {
+  "message": "你的服务器地址，例如 http://192.168.1.10:8888"
+ },
+ "connNoMatchPick": {
+  "message": "无法识别这个密钥，在上面选一下平台。"
+ },
+ "connNoMatch": {
+  "message": "无法识别这个密钥。"
+ },
+ "connSentGlance": {
+  "message": "你看过的网页会存到 $1，方便以后找回：网址、标题、访问时间和停留时长；看满 $2 秒（或视频播满 1 分钟）的还有正文，含聊天对话。"
+ },
+ "connSentRead": {
+  "message": "你看满 $2 秒（或视频播满 1 分钟）的网页会存到 $1，方便以后找回：网址、标题、正文（含聊天对话）、访问时间和停留时长。"
+ },
+ "connSentNone": {
+  "message": "你看过的网页会存到你连接的平台，方便以后找回：网址、标题、访问时间和停留时长；看满 $1 秒（或视频播满 1 分钟）的还有正文，含聊天对话。"
+ },
+ "connSentGlancePlay": {
+  "message": "你看过的网页会存到 $1，方便以后找回：网址、标题、访问时间和停留时长；看满 $2 秒（或视频播满 1 分钟）的还有正文，含聊天对话；视频还有播放记录、字幕和视频文件地址。"
+ },
+ "connSentReadPlay": {
+  "message": "你看满 $2 秒（或视频播满 1 分钟）的网页会存到 $1，方便以后找回：网址、标题、正文（含聊天对话）、访问时间和停留时长；视频还有播放记录、字幕和视频文件地址。"
+ },
+ "connFailHost": {
+  "message": "无法连接 $1，请确认服务器已开启。"
+ },
+ "connFailNet": {
+  "message": "无法连接 $1，请检查网络。"
+ },
+ "connFailPerm": {
+  "message": "未获得权限。再点“$1”，选择“允许”。"
+ },
+ "onbTagline": {
+  "message": "认真读过的网页，替你记下"
+ },
+ "onbNotNow": {
+  "message": "先不记录"
+ },
+ "onbDone": {
+  "message": "已连接 $1"
+ },
+ "onbPinClick": {
+  "message": "点"
+ },
+ "onbPinThen": {
+  "message": "再点"
+ },
+ "onbPinTail": {
+  "message": "，固定到工具栏。"
+ },
+ "onbPuzzle": {
+  "message": "拼图图标"
+ },
+ "onbPin": {
+  "message": "图钉图标"
+ },
+ "onbFinish": {
+  "message": "完成"
+ },
+ "setTitle": {
+  "message": "设置"
+ },
+ "setWhere": {
+  "message": "发到哪"
+ },
+ "setManage": {
+  "message": "管理"
+ },
+ "setManageX": {
+  "message": "管理 $1"
+ },
+ "setSendTo": {
+  "message": "发到 $1"
+ },
+ "setOff": {
+  "message": "已停用"
+ },
+ "setRejected": {
+  "message": "$1被拒，$2 页待发送"
+ },
+ "setKey": {
+  "message": "密钥"
+ },
+ "setDown": {
+  "message": "无法连接，$1 页待发送"
+ },
+ "setOk": {
+  "message": "已连接，今天 $1 页"
+ },
+ "setAddr": {
+  "message": "地址"
+ },
+ "setChange": {
+  "message": "更换"
+ },
+ "setChangeX": {
+  "message": "更换 $1 的连接信息"
+ },
+ "setChangePh": {
+  "message": "贴上 $1 的新密钥"
+ },
+ "setChangeNs": {
+  "message": "地址在密钥里，会一起换。"
+ },
+ "setChangeGo": {
+  "message": "连接"
+ },
+ "setRemove": {
+  "message": "移除"
+ },
+ "setRemoveAsk": {
+  "message": "移除 $1？密钥会从这个浏览器删掉。"
+ },
+ "setRemoveAskN": {
+  "message": "移除 $1？密钥和待发的 $2 页会从这个浏览器删掉。"
+ },
+ "setKinds": {
+  "message": "发哪些页"
+ },
+ "setKindsRead": {
+  "message": "只发看满的"
+ },
+ "setKindsAll": {
+  "message": "看过的都发"
+ },
+ "setAdd": {
+  "message": "添加平台"
+ },
+ "setCancel": {
+  "message": "取消"
+ },
+ "setThr": {
+  "message": "看满几秒记正文"
+ },
+ "setSec": {
+  "message": "$1 秒"
+ },
+ "setSkip": {
+  "message": "不记的网站"
+ },
+ "setSkipRemove": {
+  "message": "移除 $1"
+ },
+ "setSkipLabel": {
+  "message": "添加不记的网站"
+ },
+ "setSkipPh": {
+  "message": "比如 mail.company.com"
+ },
+ "setSkipAdd": {
+  "message": "添加"
+ },
+ "setSkipBad": {
+  "message": "网址格式不对"
+ },
+ "setSkipInfo": {
+  "message": "不记的网站的说明"
+ },
+ "setSkipTip0": {
+  "message": "网页上右键、弹窗里点「不记这个网站」也能加。"
+ },
+ "setSkipTip1": {
+  "message": "内置：$1 个密码管理器网站（如 1password.com）、自己标了成人内容的网页。"
+ },
+ "setSkipTip2": {
+  "message": "内置的不全，漏掉的自己加。"
+ },
+ "setSubs": {
+  "message": "字幕"
+ },
+ "setSubsSub": {
+  "message": "看满 1 分钟的视频，存下字幕；没字幕的转成文字。"
+ },
+ "fieldNamespaceBad": {
+  "message": "只能用字母、数字和 _ : -"
+ },
+ "popStart": {
+  "message": "还没开始记录"
+ },
+ "popConnect": {
+  "message": "连接平台"
+ },
+ "popPaused": {
+  "message": "已暂停"
+ },
+ "popPausedNote": {
+  "message": "所有网页都不记"
+ },
+ "popWait": {
+  "message": "看满 $1 秒，记下正文"
+ },
+ "popRefresh": {
+  "message": "刷新后开始计时"
+ },
+ "popSaved": {
+  "message": "记下了"
+ },
+ "popOff": {
+  "message": "这页不记"
+ },
+ "popBrowser": {
+  "message": "浏览器自带页面"
+ },
+ "popSkipRule": {
+  "message": "$1 在名单里"
+ },
+ "popSkipBuiltIn": {
+  "message": "内置不记：$1"
+ },
+ "popEditList": {
+  "message": "改名单"
+ },
+ "popThisPage": {
+  "message": "这一页"
+ },
+ "popPause": {
+  "message": "暂停"
+ },
+ "popResume": {
+  "message": "继续"
+ },
+ "popSettings": {
+  "message": "设置"
+ },
+ "popNet": {
+  "message": "无法连接 $1，$2 页待发送"
+ },
+ "popAuthKey": {
+  "message": "$1 拒绝了密钥，$2 页待发送"
+ },
+ "popRetry": {
+  "message": "重试"
+ },
+ "popGoSettings": {
+  "message": "去设置"
+ },
+ "popToday": {
+  "message": "今天 $1 页"
+ },
+ "popDelivered": {
+  "message": "已送达"
+ },
+ "popReadFor": {
+  "message": "读了 $1"
+ },
+ "popReadOld": {
+  "message": "读过"
+ },
+ "popGlance": {
+  "message": "扫了一眼"
+ },
+ "popRedacted": {
+  "message": "遮住 $1 处密钥"
+ },
+ "popQueued": {
+  "message": "待发送"
+ },
+ "popFailed": {
+  "message": "发送失败"
+ },
+ "popSec": {
+  "message": "$1 秒"
+ },
+ "popMin": {
+  "message": "$1 分钟"
+ },
+ "popHour": {
+  "message": "$1 小时"
+ },
+ "popHourMin": {
+  "message": "$1 小时 $2 分钟"
+ },
+ "popMore": {
+  "message": "更多操作：$1"
+ },
+ "popDelete": {
+  "message": "删除"
+ },
+ "popSkipSite": {
+  "message": "不记这个网站"
+ },
+ "popLocal": {
+  "message": "只在本机"
+ },
+ "popEarlier": {
+  "message": "更早"
+ },
+ "popSkipped": {
+  "message": "以后不记 $1 了"
+ },
+ "popSkippedN": {
+  "message": "以后不记 $1 了，已删除最近的 $2 条。"
+ },
+ "popSep": {
+  "message": "、"
+ },
+ "popDelTitle": {
+  "message": "删除记录"
+ },
+ "popLast15": {
+  "message": "最近 15 分钟"
+ },
+ "popDelAll": {
+  "message": "全部"
+ },
+ "popDelHook": {
+  "message": "本机删除，$1 上所有电脑记的都作废。"
+ },
+ "popDelAllHook": {
+  "message": "本机删除，$1 上所有电脑记的都作废。设置和连接保留。"
+ },
+ "popDelLocal": {
+  "message": "本机删除。"
+ },
+ "popDelAllLocal": {
+  "message": "本机删除。设置和连接保留。"
+ },
+ "popDelThere": {
+  "message": "$1 上的需另外删除。"
+ },
+ "popLastHour": {
+  "message": "最近 1 小时"
+ },
+ "popDelToday": {
+  "message": "今天"
+ },
+ "popDeletedN": {
+  "message": "已删除 $1 条"
+ },
+ "popDeletedNone": {
+  "message": "没有可删的"
+ },
+ "popForgetPending": {
+  "message": "$1：待作废"
+ },
+ "popForgetDone": {
+  "message": "$1：已作废"
+ },
+ "popForgetFailed": {
+  "message": "$1：作废失败（$2）"
+ },
+ "popDeleteThere": {
+  "message": "$1 上的需另外删除"
+ },
+ "fieldUrl": {
+  "message": "地址"
+ },
+ "fieldUrlBad": {
+  "message": "地址要以 http:// 或 https:// 开头。"
+ },
+ "fieldBank": {
+  "message": "库名"
+ },
+ "fieldBankBad": {
+  "message": "库名不能为空。"
+ },
+ "hsRefuseExtracts": {
+  "message": "这个库会用模型提炼内容。换一个新的库名。"
+ },
+ "hsRefuseSetup": {
+  "message": "这台 Hindsight 不让设置库，没法只存原文。"
+ },
+ "popNotTaken": {
+  "message": "$1 没收下（$3），$2 页待发送"
+ }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Afferent: two points with a spark between them (a signal passed from one nerve cell to the next). -->
+  <rect width="128" height="128" rx="26" fill="#EFA47E"/>
+  <path d="M32 34L70 58L52 70L96 94" fill="none" stroke="#45362D" stroke-width="12" stroke-linejoin="miter" stroke-miterlimit="8" stroke-linecap="round"/>
+  <circle cx="32" cy="34" r="16" fill="#45362D"/>
+  <circle cx="96" cy="94" r="16" fill="#45362D"/>
+</svg>

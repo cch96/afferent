@@ -1,0 +1,419 @@
+{
+ "extName": {
+  "message": "Afferent"
+ },
+ "extDesc": {
+  "message": "Saves the pages you really read to the memory platform you choose."
+ },
+ "fieldNamespace": {
+  "message": "Namespace"
+ },
+ "fieldUserId": {
+  "message": "User ID"
+ },
+ "connLabel": {
+  "message": "API key"
+ },
+ "connPickGroup": {
+  "message": "Pick a platform"
+ },
+ "connStart": {
+  "message": "Agree and start"
+ },
+ "connConnect": {
+  "message": "Agree and connect"
+ },
+ "connBusy": {
+  "message": "Connecting…"
+ },
+ "connTitle": {
+  "message": "Connect a memory platform"
+ },
+ "connPh": {
+  "message": "Paste your API key"
+ },
+ "connPhFor": {
+  "message": "Paste your $1 API key"
+ },
+ "connHintPick": {
+  "message": "No key? Pick a platform above first."
+ },
+ "connHintNoKey": {
+  "message": "No key?"
+ },
+ "connGetKey": {
+  "message": "Get one from $1 ↗"
+ },
+ "connSelfHosted": {
+  "message": "Self-hosted?"
+ },
+ "connChangeAddr": {
+  "message": "Change server URL"
+ },
+ "connAddrPh": {
+  "message": "Your server URL, e.g. http://192.168.1.10:8888"
+ },
+ "connNoMatchPick": {
+  "message": "This key isn’t recognised. Pick a platform above."
+ },
+ "connNoMatch": {
+  "message": "This key isn’t recognised."
+ },
+ "connSentGlance": {
+  "message": "Pages you view are saved to $1 so you can find them later: address, title, when and how long you viewed them, plus the text (including chat conversations) once you have read for $2 s or a video has played for 1 min."
+ },
+ "connSentRead": {
+  "message": "Pages you read for $2 s (or where a video plays for 1 min) are saved to $1 so you can find them later: address, title, text (including chat conversations), and when and how long you viewed them."
+ },
+ "connSentNone": {
+  "message": "Pages you view are saved to the platform you connect so you can find them later: address, title, when and how long you viewed them, plus the text (including chat conversations) once you have read for $1 s or a video has played for 1 min."
+ },
+ "connSentGlancePlay": {
+  "message": "Pages you view are saved to $1 so you can find them later: address, title, when and how long you viewed them, plus the text (including chat conversations) once you have read for $2 s or a video has played for 1 min; for videos also playback, subtitles and the video file address."
+ },
+ "connSentReadPlay": {
+  "message": "Pages you read for $2 s (or where a video plays for 1 min) are saved to $1 so you can find them later: address, title, text (including chat conversations), and when and how long you viewed them; for videos also playback, subtitles and the video file address."
+ },
+ "connFailHost": {
+  "message": "Can’t reach $1. Check that the server is running."
+ },
+ "connFailNet": {
+  "message": "Can’t reach $1. Check your network."
+ },
+ "connFailPerm": {
+  "message": "No permission. Click “$1” again and choose “Allow”."
+ },
+ "onbTagline": {
+  "message": "Keeps the pages you really read"
+ },
+ "onbNotNow": {
+  "message": "Don’t record yet"
+ },
+ "onbDone": {
+  "message": "Connected to $1"
+ },
+ "onbPinClick": {
+  "message": "Click"
+ },
+ "onbPinThen": {
+  "message": "then"
+ },
+ "onbPinTail": {
+  "message": "to pin it to the toolbar."
+ },
+ "onbPuzzle": {
+  "message": "puzzle icon"
+ },
+ "onbPin": {
+  "message": "pin icon"
+ },
+ "onbFinish": {
+  "message": "Done"
+ },
+ "setTitle": {
+  "message": "Settings"
+ },
+ "setWhere": {
+  "message": "Send to"
+ },
+ "setManage": {
+  "message": "Manage"
+ },
+ "setManageX": {
+  "message": "Manage $1"
+ },
+ "setSendTo": {
+  "message": "Send to $1"
+ },
+ "setOff": {
+  "message": "Off"
+ },
+ "setRejected": {
+  "message": "$1 rejected · $2 queued"
+ },
+ "setKey": {
+  "message": "Key"
+ },
+ "setDown": {
+  "message": "Can’t connect · $1 queued"
+ },
+ "setOk": {
+  "message": "Connected · $1 today"
+ },
+ "setAddr": {
+  "message": "Server"
+ },
+ "setChange": {
+  "message": "Change"
+ },
+ "setChangeX": {
+  "message": "Change how $1 is connected"
+ },
+ "setChangePh": {
+  "message": "Paste the new key for $1"
+ },
+ "setChangeNs": {
+  "message": "The address is part of the key and changes with it."
+ },
+ "setChangeGo": {
+  "message": "Connect"
+ },
+ "setRemove": {
+  "message": "Remove"
+ },
+ "setRemoveAsk": {
+  "message": "Remove $1? Its key will be deleted from this browser."
+ },
+ "setRemoveAskN": {
+  "message": "Remove $1? Its key and $2 pages waiting to be sent will be deleted from this browser."
+ },
+ "setKinds": {
+  "message": "Which pages"
+ },
+ "setKindsRead": {
+  "message": "Read pages only"
+ },
+ "setKindsAll": {
+  "message": "Every page I open"
+ },
+ "setAdd": {
+  "message": "Add platform"
+ },
+ "setCancel": {
+  "message": "Cancel"
+ },
+ "setThr": {
+  "message": "Save text after"
+ },
+ "setSec": {
+  "message": "$1 s"
+ },
+ "setSkip": {
+  "message": "Skip list"
+ },
+ "setSkipRemove": {
+  "message": "Remove $1"
+ },
+ "setSkipLabel": {
+  "message": "Add a site to skip"
+ },
+ "setSkipPh": {
+  "message": "e.g. mail.company.com"
+ },
+ "setSkipAdd": {
+  "message": "Add"
+ },
+ "setSkipBad": {
+  "message": "Not a valid site"
+ },
+ "setSkipInfo": {
+  "message": "About sites that are not recorded"
+ },
+ "setSkipTip0": {
+  "message": "You can also add a site from a page’s right-click menu or from the popup."
+ },
+ "setSkipTip1": {
+  "message": "Built in: $1 password-manager sites (such as 1password.com) and pages that label themselves adult."
+ },
+ "setSkipTip2": {
+  "message": "The built-in list is not complete. Add what it misses."
+ },
+ "setSubs": {
+  "message": "Subtitles"
+ },
+ "setSubsSub": {
+  "message": "Saves subtitles of videos watched for 1 min; transcribes those without."
+ },
+ "fieldNamespaceBad": {
+  "message": "Only letters, digits and _ : -."
+ },
+ "popStart": {
+  "message": "Not recording yet"
+ },
+ "popConnect": {
+  "message": "Connect"
+ },
+ "popPaused": {
+  "message": "Paused"
+ },
+ "popPausedNote": {
+  "message": "No pages are recorded"
+ },
+ "popWait": {
+  "message": "Read $1 s to save"
+ },
+ "popRefresh": {
+  "message": "Reload to start"
+ },
+ "popSaved": {
+  "message": "Saved"
+ },
+ "popOff": {
+  "message": "Not recorded"
+ },
+ "popBrowser": {
+  "message": "Browser page"
+ },
+ "popSkipRule": {
+  "message": "$1 is on the skip list"
+ },
+ "popSkipBuiltIn": {
+  "message": "Built in, not recorded: $1"
+ },
+ "popEditList": {
+  "message": "Edit list"
+ },
+ "popThisPage": {
+  "message": "This page"
+ },
+ "popPause": {
+  "message": "Pause"
+ },
+ "popResume": {
+  "message": "Resume"
+ },
+ "popSettings": {
+  "message": "Settings"
+ },
+ "popNet": {
+  "message": "Can’t reach $1 · $2 queued"
+ },
+ "popAuthKey": {
+  "message": "$1 rejected the key · $2 queued"
+ },
+ "popRetry": {
+  "message": "Retry"
+ },
+ "popGoSettings": {
+  "message": "Settings"
+ },
+ "popToday": {
+  "message": "Today: $1"
+ },
+ "popDelivered": {
+  "message": "Delivered"
+ },
+ "popReadFor": {
+  "message": "Read $1"
+ },
+ "popReadOld": {
+  "message": "Read"
+ },
+ "popGlance": {
+  "message": "Glanced"
+ },
+ "popRedacted": {
+  "message": "$1 keys masked"
+ },
+ "popQueued": {
+  "message": "Queued"
+ },
+ "popFailed": {
+  "message": "Not sent"
+ },
+ "popSec": {
+  "message": "$1 s"
+ },
+ "popMin": {
+  "message": "$1 min"
+ },
+ "popHour": {
+  "message": "$1 h"
+ },
+ "popHourMin": {
+  "message": "$1 h $2 min"
+ },
+ "popMore": {
+  "message": "More: $1"
+ },
+ "popDelete": {
+  "message": "Delete"
+ },
+ "popSkipSite": {
+  "message": "Don’t record this site"
+ },
+ "popLocal": {
+  "message": "Local only"
+ },
+ "popEarlier": {
+  "message": "Earlier"
+ },
+ "popSkipped": {
+  "message": "$1 won’t be recorded again."
+ },
+ "popSkippedN": {
+  "message": "$1 won’t be recorded from now on. Recent records deleted: $2."
+ },
+ "popSep": {
+  "message": ", "
+ },
+ "popDelTitle": {
+  "message": "Delete records"
+ },
+ "popLast15": {
+  "message": "Last 15 minutes"
+ },
+ "popDelAll": {
+  "message": "All time"
+ },
+ "popDelHook": {
+  "message": "Deleted here and hidden in $1, from every computer."
+ },
+ "popDelAllHook": {
+  "message": "Deleted here and hidden in $1, from every computer. Settings and connections stay."
+ },
+ "popDelLocal": {
+  "message": "Deleted here."
+ },
+ "popDelAllLocal": {
+  "message": "Deleted here. Settings and connections stay."
+ },
+ "popDelThere": {
+  "message": " Delete copies in $1 there."
+ },
+ "popLastHour": {
+  "message": "Last hour"
+ },
+ "popDelToday": {
+  "message": "Today"
+ },
+ "popDeletedN": {
+  "message": "$1 deleted"
+ },
+ "popDeletedNone": {
+  "message": "Nothing to delete"
+ },
+ "popForgetPending": {
+  "message": "$1: hide pending"
+ },
+ "popForgetDone": {
+  "message": "$1: hidden"
+ },
+ "popForgetFailed": {
+  "message": "$1: hide failed ($2)"
+ },
+ "popDeleteThere": {
+  "message": "Also delete it in $1"
+ },
+ "fieldUrl": {
+  "message": "Server URL"
+ },
+ "fieldUrlBad": {
+  "message": "The URL must start with http:// or https://."
+ },
+ "fieldBank": {
+  "message": "Bank"
+ },
+ "fieldBankBad": {
+  "message": "The bank name cannot be empty."
+ },
+ "hsRefuseExtracts": {
+  "message": "This bank runs a model over what it stores. Use a new bank name."
+ },
+ "hsRefuseSetup": {
+  "message": "This Hindsight server does not let the extension set up the bank, so it cannot store text only."
+ },
+ "popNotTaken": {
+  "message": "$1 didn’t take pages ($3) · $2 queued"
+ }
+}

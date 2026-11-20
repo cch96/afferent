@@ -1,0 +1,110 @@
+/* Settings (Settings8). Light only. Resets the old global rules of style.css for this page. */
+:root { color-scheme: light; }
+[hidden] { display: none !important; }
+body.set { margin: 0; padding: 0; max-width: none; min-height: 100vh; background: var(--bg); color: var(--ink);
+  font: 15px/1.6 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', system-ui, sans-serif; }
+.set :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+/* The key in 更换 / 添加平台 keeps connect.css's quiet ring, as on the first-run page. */
+.set .c-input:focus-visible { outline: none; }
+.set label { display: inline; margin: 0; }
+:where(.set) button { margin: 0; font: inherit; color: var(--ink); cursor: pointer; }
+.set input::placeholder { color: var(--muted); }
+.set .lk { font-size: 14px; text-decoration-thickness: 2px; }
+.set h2 { margin: 0; font-size: 20px; line-height: 1.4; font-weight: 700; }
+.set p { margin: 0; }
+.grow { flex: 1 1 auto; min-width: 0; }
+.col { display: flex; flex-direction: column; }
+.t { font-size: 14px; font-weight: 700; }
+.sub { font-size: 13px; color: var(--muted); }
+.err { font-size: 13px; font-weight: 600; color: var(--red-text); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* 88px bottom: scrolled to the bottom, the 不记的网站 ⓘ card still fits below its ⓘ with 16px shadow room. */
+main { max-width: 760px; margin: 0 auto; box-sizing: border-box; padding: 28px clamp(20px, 5vw, 48px) 88px;
+  display: flex; flex-direction: column; gap: 40px; }
+.head { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+.head .wordmark { gap: 10px; font-size: 20px; }
+.head .wordmark::before { width: 28px; height: 28px; border-radius: 8px; }
+.head h1 { margin: 0; font-size: 32px; line-height: 1.25; font-weight: 800; }
+
+/* Pills */
+.soft, .chip, .add { min-height: 44px; padding: 0 18px; border: 0; border-radius: 999px; background: var(--bg); font-size: 14px; font-weight: 600; }
+.add { background: var(--soft); }
+.add { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 0 20px 0 14px; }
+.outline { min-height: 44px; padding: 0 20px; border: 1.5px solid var(--ink); border-radius: 999px; background: transparent; font-size: 14px; font-weight: 600; }
+
+/* 发到哪 */
+.where-sec { display: flex; flex-direction: column; gap: 10px; }
+.where-sec h2 { margin-bottom: 4px; }
+.dests { display: flex; flex-direction: column; gap: 10px; }
+.dests:empty { display: none; }
+.dest { border-radius: 20px; background: var(--soft); }
+.row { display: flex; align-items: center; gap: 12px; min-height: 68px; box-sizing: border-box; padding: 6px 8px 6px 20px; }
+.dot { flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--ok); }
+.dest[data-tone="off"] .dot { background: #BFB1A6; }
+.dest[data-tone="bad"] .dot { background: var(--red); }
+.name { font-size: 16px; font-weight: 700; overflow-wrap: anywhere; }
+.status { font-size: 13px; color: var(--muted); }
+.dest[data-tone="bad"] .status { color: var(--red-text); }
+.switch { flex: none; display: flex; align-items: center; justify-content: center; width: 60px; height: 44px; padding: 0; border: 0; background: transparent; }
+.track { position: relative; display: block; width: 48px; height: 28px; border-radius: 999px; background: #D3C7BD; }
+.knob { position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 50%; background: var(--bg); box-shadow: 0 1px 2px rgba(69, 54, 45, .25); }
+.switch[aria-checked="true"] .track { background: var(--dot); }
+.switch[aria-checked="true"] .knob { left: 23px; }
+.row-msg { margin: 0 20px; padding-bottom: 14px; }
+.panel { display: grid; grid-template-columns: auto 1fr; gap: 12px 18px; align-items: center; margin: 0 20px; padding: 14px 0 10px; border-top: 1px solid var(--rule); }
+.panel > div:empty { display: none; }
+.wide { grid-column: 1 / -1; }
+.ctl { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.addr { flex: 1 1 auto; min-width: 0; font: 14px 'Cascadia Mono', Consolas, 'SF Mono', ui-monospace, monospace; overflow-wrap: anywhere; }
+.seg { justify-self: start; display: flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--bg); }
+.seg-btn { min-height: 44px; padding: 0 18px; border: 0; border-radius: 999px; background: transparent; font-size: 14px; font-weight: 600; }
+.seg-btn[aria-pressed="true"] { background: var(--fill); }
+.card { padding: 18px 20px; border-radius: 20px; background: var(--soft); }
+/* 移除: a quiet red word; asking turns the row into a sentence, 取消 and a red button. */
+.rm-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 6px 16px; }
+.quiet { min-height: 44px; padding: 0 6px; border: 0; border-radius: 999px; background: transparent; font-size: 14px; font-weight: 600; }
+.set .quiet { color: var(--muted); }
+.set .rm, .rm-ask { color: var(--red-text); }
+.rm-ask { flex: 1 1 auto; font-size: 14px; font-weight: 600; }
+.set .rm-go { min-height: 44px; padding: 0 22px; border: 0; border-radius: 999px; background: var(--red-btn); color: var(--red-btn-fg); font-size: 14px; font-weight: 700; }
+
+/* 看满几秒 */
+.thr-sec { display: flex; flex-direction: column; gap: 4px; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+#thr-out { font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.thr { -webkit-appearance: none; appearance: none; width: 100%; height: 44px; margin: 0; background: transparent; cursor: pointer; }
+.thr::-webkit-slider-runnable-track { height: 10px; border-radius: 999px; background: linear-gradient(to right, var(--fill) 0 var(--p), var(--base) var(--p) 100%); }
+.thr::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 26px; height: 26px; margin-top: -8px; border-radius: 50%;
+  background: var(--dot); border: 3px solid var(--bg); box-shadow: 0 1px 3px rgba(69, 54, 45, .3); }
+.thr::-moz-range-track { height: 10px; border-radius: 999px; background: var(--base); }
+.thr::-moz-range-progress { height: 10px; border-radius: 999px; background: var(--fill); }
+.thr::-moz-range-thumb { width: 20px; height: 20px; border-radius: 50%; background: var(--dot); border: 3px solid var(--bg); }
+.ends { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); }
+
+/* 不记的网站 */
+.skip-sec { display: flex; flex-direction: column; gap: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.chips:empty { display: none; }
+.chips li { display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding-left: 18px; border-radius: 999px;
+  box-shadow: inset 0 0 0 1.5px var(--rule); font-size: 14px; font-weight: 500; overflow-wrap: anywhere; }
+.x { display: flex; flex: none; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 999px;
+  background: transparent; }
+.set .x { color: var(--muted); }
+.skip-add { display: flex; flex-wrap: wrap; gap: 8px; }
+.skip-add .grow { position: relative; flex: 1 1 260px; }
+#skip-in { width: 100%; box-sizing: border-box; height: 44px; padding: 0 20px; border: 0; border-radius: 999px; background: var(--soft);
+  color: var(--ink); font: inherit; font-size: 14px; }
+.lab { position: relative; display: flex; align-items: center; gap: 4px; height: 44px; }
+.info { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; padding: 0; border: 0; border-radius: 999px; background: transparent; color: var(--muted); }
+.set .info:focus-visible { outline-offset: -3px; }
+/* Below the ⓘ (top 8..36 in the 44px row); .up opens it above. --caret is set to point at the ⓘ. */
+.tip { position: absolute; top: 37px; left: -12px; z-index: 2; width: 376px; max-width: calc(100vw - 40px); box-sizing: border-box; padding: 12px 16px;
+  border: 1px solid var(--rule); border-radius: 14px; background: var(--bg); box-shadow: 0 6px 20px rgba(69, 54, 45, .12); }
+.tip.up { top: auto; bottom: 37px; }
+.tip::before { content: ''; position: absolute; top: -5px; left: var(--caret, 51px); width: 10px; height: 10px; background: var(--bg);
+  border: solid var(--rule); border-width: 1px 0 0 1px; transform: rotate(45deg); }
+.tip.up::before { top: auto; bottom: -5px; border-width: 0 1px 1px 0; }
+.tip p { margin: 0; font-size: 13px; color: var(--muted); }
+.tip p + p { margin-top: 6px; }
+.tip strong, .tip .lead { color: var(--ink); }

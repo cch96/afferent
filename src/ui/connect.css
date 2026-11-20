@@ -1,0 +1,62 @@
+/* The paste-and-connect box (connect.js). Default is the first-run look; settings overrides under .connect.settings. */
+.connect { width: 100%; max-width: 500px; display: flex; flex-direction: column; gap: 26px; }
+.connect [hidden] { display: none !important; }
+.connect :focus-visible, .lk:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.connect label { display: inline; margin: 0; }
+.connect button { margin: 0; }
+.c-title { margin: 0; font-size: 30px; line-height: 1.35; font-weight: 800; }
+.c-field { display: flex; flex-direction: column; gap: 10px; }
+.c-input { width: 100%; box-sizing: border-box; height: 60px; padding: 0 20px; border: 0; border-radius: 18px;
+  background: var(--soft); box-shadow: inset 0 0 0 2px var(--rule); color: var(--ink);
+  font: 14px 'Cascadia Mono', Consolas, 'SF Mono', ui-monospace, monospace; }
+.c-input::placeholder { color: var(--muted); }
+/* The key is focused on the first-run page: the quiet ask-field ring, not the house outline; red wins. */
+.c-input:focus-visible { outline: none; box-shadow: inset 0 0 0 2px #C77A52; }
+.c-input.failed { box-shadow: inset 0 0 0 2px var(--red); }
+.c-fail { margin: 0; font-size: 14px; font-weight: 600; color: var(--red-text); }
+.c-picks { display: flex; flex-wrap: wrap; align-items: center; gap: 0 8px; }
+/* The chip looks 31px tall; ::before keeps a 44px target. */
+.connect .c-pill { position: relative; margin: 6px 0; padding: 5px 12px; border: 0; border-radius: 999px; background: var(--pill); color: var(--ink);
+  font: inherit; font-size: 13px; line-height: 1.6; font-weight: 700; cursor: pointer; }
+.c-pill::before { content: ''; position: absolute; inset: -6px 0; }
+.c-pill:hover { background: #EFE3D9; }
+.c-pill[aria-pressed="true"] { background: var(--fill); }
+.c-asks { display: flex; flex-direction: column; gap: 10px; }
+.c-asks:empty { display: none; }
+/* An ask-field: its name inside the pill, before the value. */
+.connect .c-ask { display: flex; align-items: center; height: 44px; box-sizing: border-box; padding-left: 18px; border-radius: 999px;
+  background: var(--soft); box-shadow: inset 0 0 0 2px var(--rule); font-size: 13px; color: var(--muted); }
+.c-ask:focus-within { box-shadow: inset 0 0 0 2px #C77A52; }
+.c-ask:has(.failed) { box-shadow: inset 0 0 0 2px var(--red); }
+.c-ask .c-input { flex: 1; min-width: 0; height: 100%; padding: 0 18px 0 10px; border-radius: 0; background: transparent; box-shadow: none; font-size: 13px; }
+.c-ask .c-input:focus-visible { outline: none; }
+.c-input::placeholder { font-family: 'Microsoft YaHei UI', 'PingFang SC', 'Noto Sans SC', system-ui, sans-serif; }
+/* 更换: the platform's note under its fields. */
+.c-note { margin: 0; font-size: 13px; color: var(--muted); }
+/* The fixed row under the key: holds its height so the button does not jump. */
+.c-row { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 14px; min-height: 44px; font-size: 13px; color: var(--muted); }
+.c-row .lk { display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; }
+.c-go { display: flex; flex-direction: column; gap: 16px; }
+.c-line { margin: 0; font-size: 14px; line-height: 1.7; }
+.c-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; }
+.c-btn { min-height: 56px; margin: 0; padding: 0 34px; border: 0; border-radius: 999px; background: var(--ink); color: var(--bg);
+  font: inherit; font-size: 17px; font-weight: 800; cursor: pointer; }
+.c-btn:disabled { background: #EFE7E0; color: #9C8C80; cursor: default; }
+.c-btn[aria-busy="true"] { background: var(--ink); color: var(--bg); cursor: progress; }
+/* Text link with the peach underline; also used as a button. */
+.lk { color: var(--ink); text-decoration: underline; text-decoration-color: var(--fill); text-decoration-thickness: 3px; text-underline-offset: 4px; }
+.lk:hover { text-decoration-color: var(--ink); }
+button.lk { min-height: 44px; margin: 0; padding: 0; border: 0; background: transparent; font: inherit; cursor: pointer; }
+/* Settings mode (Settings8 add card): smaller, on the soft card, one disclosure line. */
+.connect.settings { max-width: none; gap: 10px; }
+.connect.settings > label { font-size: 15px; font-weight: 700; }
+.connect.settings .c-input { height: 52px; border-radius: 16px; padding-left: 18px; background: var(--bg); }
+.connect.settings .c-pill { background: var(--bg); font-weight: 600; }
+.connect.settings .c-ask { background: var(--bg); }
+.connect.settings .c-ask .c-input { background: transparent; }
+.connect.settings .c-pill[aria-pressed="true"] { background: var(--fill); }
+.connect.settings .c-go { gap: 10px; }
+.connect.settings .c-line { font-size: 14px; }
+.connect.settings .c-actions { gap: 8px 18px; }
+.connect.settings .c-btn { min-height: 44px; padding: 0 20px; font-size: 14px; font-weight: 700; }
+.connect.settings .lk { font-size: 14px; text-decoration-thickness: 2px; }

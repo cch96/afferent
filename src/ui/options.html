@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Afferent</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="connect.css"><link rel="stylesheet" href="options.css"></head>
+<body class="set">
+<main>
+  <header class="head"><span class="wordmark">Afferent</span><h1 data-i18n="setTitle"></h1></header>
+
+  <section aria-labelledby="st-where" class="where-sec">
+    <h2 id="st-where" data-i18n="setWhere"></h2>
+    <div id="dests" class="dests"></div>
+    <button type="button" id="add" class="add">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg><span data-i18n="setAdd"></span></button>
+    <div id="add-card" class="card" hidden></div>
+  </section>
+
+  <section aria-labelledby="st-thr" class="thr-sec">
+    <div class="sec-head">
+      <h2 id="st-thr"><label for="thr" data-i18n="setThr"></label></h2>
+      <output id="thr-out" for="thr"></output>
+    </div>
+    <input id="thr" class="thr" type="range" min="3" max="60" step="1">
+    <div class="ends"><span id="thr-min"></span><span id="thr-max"></span></div>
+  </section>
+
+  <section id="skip" aria-labelledby="skip-h" class="skip-sec">
+    <div id="skip-lab" class="lab"><h2 id="skip-h" data-i18n="setSkip"></h2>
+      <button type="button" id="skip-info" class="info" aria-describedby="skip-tip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg></button>
+      <div id="skip-tip" class="tip" role="tooltip" hidden>
+        <p class="lead" data-i18n="setSkipTip0"></p>
+        <p id="skip-tip1"></p>
+        <p><strong data-i18n="setSkipTip2"></strong></p>
+      </div>
+    </div>
+    <ul id="own-sites" class="chips" aria-labelledby="skip-h"></ul>
+    <div class="skip-add">
+      <label class="grow"><span class="sr" data-i18n="setSkipLabel"></span><input type="text" id="skip-in" autocomplete="off" spellcheck="false"></label>
+      <button type="button" id="skip-add" class="outline" data-i18n="setSkipAdd"></button>
+    </div>
+    <p id="skip-msg" class="err" role="alert" hidden></p>
+  </section>
+</main>
+<script type="module" src="options.js"></script>
+</body></html>

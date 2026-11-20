@@ -1,0 +1,80 @@
+/* Popup, per the approved design (Popup8 boards). Colours come from the variables in style.css. */
+[hidden] { display: none !important; }
+body.popup {
+  position: relative; width: 380px; height: 560px; max-width: none; margin: 0; padding: 0; box-sizing: border-box;
+  display: flex; flex-direction: column; overflow: hidden; background: var(--bg); color: var(--ink);
+  font: 14px/1.5 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', system-ui, sans-serif;
+}
+.popup button { margin: 0; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; cursor: pointer; }
+.popup :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+.popup header { flex: none; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 6px 6px 0 16px; }
+.popup .tools { display: flex; align-items: center; }
+.pill-btn { flex: none; display: inline-flex; align-items: center; min-height: 44px; }
+.pill { display: inline-flex; align-items: center; gap: 5px; min-height: 32px; box-sizing: border-box; border-radius: 999px; font-size: 13px; font-weight: 700; }
+#pause .pill { padding: 0 13px 0 10px; background: var(--pill); color: var(--pill-fg); }
+#pause.paused .pill { background: var(--paused-bg); color: var(--paused-fg); }
+#pause .i-play, #pause.paused .i-pause { display: none; }
+#pause.paused .i-play { display: block; }
+.round-btn { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; }
+.round-btn span { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 999px; background: var(--pill); }
+
+#card { position: relative; flex: none; margin: 6px 12px 0; border-radius: 18px; overflow: hidden; background: var(--base); }
+#card.grey { background: var(--grey); }
+#fill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--card-fill); }
+#card .body { position: relative; display: flex; align-items: center; gap: 12px; min-height: 76px; box-sizing: border-box; padding: 12px 10px 12px 18px; }
+#card .text { flex: 1 1 auto; min-width: 0; }
+#card .big { display: flex; align-items: center; gap: 6px; font-size: 16px; line-height: 1.4; font-weight: 700; }
+#sub { margin-top: 2px; font-size: 13px; }
+#sub.title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#action .pill { padding: 0 14px; background: var(--bg); color: var(--ink); }
+
+#banner { flex: none; display: flex; align-items: center; gap: 8px; margin: 8px 12px 0; padding: 4px 4px 4px 14px; border-radius: 22px; background: var(--red-bg); }
+#banner svg { flex: none; color: var(--red); }
+#bannerText { flex: 1 1 auto; min-width: 0; font-size: 13px; font-weight: 700; color: var(--red-text); }
+#bannerBtn { flex: none; min-height: 44px; padding: 0 18px; border-radius: 999px; background: var(--bg); color: var(--red-text); font-size: 13px; font-weight: 700; }
+
+#head { flex: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px 4px; }
+#count { margin: 0; font-size: 14px; line-height: 1.4; font-weight: 700; }
+#count { flex: 1 1 auto; }
+#delivered { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 700; color: var(--ok); }
+#forget { flex: none; padding: 2px 18px 4px; font-size: 12px; color: var(--muted); }
+#forget.failed { color: var(--red-text); }
+
+#rows { flex: 1 1 auto; min-height: 0; overflow-y: auto; list-style: none; margin: 0; padding: 0 8px 8px; }
+#rows .row { display: flex; align-items: center; gap: 10px; min-height: 52px; box-sizing: border-box; padding: 4px 0 4px 10px; }
+#rows .dot { flex: none; width: 10px; height: 10px; box-sizing: border-box; border-radius: 50%; border: 2.5px solid var(--dot); }
+#rows .read .dot { background: var(--dot); }
+#rows .what { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+#rows .what a { font-weight: 500; color: var(--ink); text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#rows .glance .what a { color: var(--muted); }
+#rows .meta { display: flex; gap: 10px; min-width: 0; font-size: 12px; color: var(--muted); white-space: nowrap; }
+#rows .meta span:first-child { overflow: hidden; text-overflow: ellipsis; }
+#rows .meta span:last-child { flex: none; }
+#rows .when { flex: none; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+#rows .when.failed { color: var(--red-text); }
+#rows .earlier-head { padding: 14px 10px 2px; font-size: 12px; font-weight: 700; color: var(--muted); }
+#rows .more { flex: none; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 999px; color: var(--muted); }
+#rows .menu { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 10px 10px 30px; }
+#rows .menu button { min-height: 44px; padding: 0 16px; border-radius: 999px; background: var(--soft); color: var(--ink); font-size: 13px; font-weight: 600; }
+
+#notice { display: none; overflow-wrap: anywhere; position: absolute; left: 12px; right: 12px; bottom: 12px; padding: 12px 16px; border-radius: 16px; background: var(--notice-bg); color: var(--ink); font-size: 13px; line-height: 1.5; box-shadow: 0 2px 10px rgba(35, 27, 22, 0.18); white-space: pre-line; }
+#notice.on { display: block; }
+
+/* The delete dialog. Dark: the page is var(--bg), so the surface steps up to var(--soft) to stand out. */
+#delDlg { box-sizing: border-box; width: calc(100% - 24px); padding: 20px 18px 16px; border: 0; border-radius: 22px; background: var(--bg); color: var(--ink); box-shadow: 0 12px 36px rgba(35, 27, 22, 0.25); }
+#delDlg::backdrop { background: rgba(35, 27, 22, 0.32); }
+#delDlg h2 { margin: 0 0 14px; font-size: 17px; }
+#delRanges { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px; border-radius: 22px; background: var(--soft); }
+#delRanges button { min-height: 40px; border-radius: 999px; font-size: 14px; font-weight: 600; }
+#delRanges button[aria-pressed="true"] { background: var(--fill); color: #45362D; }
+#delWhat { margin: 12px 2px 0; font-size: 13px; line-height: 1.6; color: var(--muted); }
+#delDlg .btns { display: flex; justify-content: flex-end; gap: 8px; margin-top: 18px; }
+#delDlg .btns button { min-height: 40px; padding: 0 18px; border-radius: 999px; font-size: 14px; font-weight: 600; }
+#delNo { background: var(--soft); }
+#delGo { background: var(--red-btn); color: var(--red-btn-fg); font-weight: 700; }
+@media (prefers-color-scheme: dark) {
+  #delDlg { background: var(--soft); }
+  #delRanges, #delNo { background: var(--base); }
+  #delDlg::backdrop { background: rgba(0, 0, 0, 0.5); }
+}
