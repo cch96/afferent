@@ -66,9 +66,11 @@ Neurosea is not open to the public yet, so the platform list offers Hindsight, S
 
 ## Install (Load unpacked)
 
-1. `git clone` this repo.
+1. Download `afferent-<version>.zip` from [Releases](https://github.com/cch96/afferent/releases/latest) and unzip it, or
+   `git clone` this repo.
 2. Open `chrome://extensions` (or `edge://extensions`) and turn on **Developer mode**.
-3. Click **Load unpacked** and choose the repo folder.
+3. Click **Load unpacked** and choose the unzipped `afferent` folder (or the cloned repo folder). Installed this way it
+   does not update itself: for a new version, replace the folder and click reload (↻).
 4. On the first-run page, pick a platform (or just paste: a Neurosea [`nsk_` key](docs/webhook.md#key)
    and Supermemory, Mem0 and Hindsight cloud keys are recognised), paste its key and click **Agree and start**.
    Self-hosted Hindsight: **Change server URL** (a picked Hindsight with a key that is not `hsk_…` asks
