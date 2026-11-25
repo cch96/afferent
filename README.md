@@ -64,7 +64,10 @@ Neurosea is not open to the public yet, so the platform list offers Hindsight, S
   erase them. "All time" covers everything, here and on Neurosea; settings and platform connections stay. Data already
   sent to Supermemory, Mem0 or Hindsight must be deleted there. The settings page no longer has "Delete local records".
 
-## Install (Load unpacked)
+## Install
+
+From the [Chrome Web Store](https://chromewebstore.google.com/detail/cnjlpocblkjhadhljedmdakkekpmpeng), which keeps it updated; then continue with step 4.
+Or load it unpacked:
 
 1. Download `afferent-<version>.zip` from [Releases](https://github.com/cch96/afferent/releases/latest) and unzip it, or
    `git clone` this repo.
