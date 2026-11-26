@@ -66,7 +66,7 @@ Neurosea is not open to the public yet, so the platform list offers Hindsight, S
 
 ## Install
 
-From the [Chrome Web Store](https://chromewebstore.google.com/detail/cnjlpocblkjhadhljedmdakkekpmpeng), which keeps it updated; then continue with step 4.
+From the [Chrome Web Store](https://chromewebstore.google.com/detail/cnjlpocblkjhadhljedmdakkekpmpeng) or [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/afferent/mobhgomglbpepmhepebhmmjglmdlonjk), which keep it updated; then continue with step 4.
 Or load it unpacked:
 
 1. Download `afferent-<version>.zip` from [Releases](https://github.com/cch96/afferent/releases/latest) and unzip it, or
